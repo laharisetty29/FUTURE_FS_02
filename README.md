@@ -109,25 +109,6 @@ npm start
 
 ---
 
-## 📡 API Endpoints
-
-| Method | Route | Description | Auth |
-|--------|-------|-------------|------|
-| POST | `/api/auth/login` | Admin login | ❌ |
-| GET | `/api/auth/me` | Get current admin | ✅ |
-| GET | `/api/leads` | List leads (filter/search/paginate) | ✅ |
-| POST | `/api/leads` | Create lead | ✅ |
-| GET | `/api/leads/:id` | Get lead detail | ✅ |
-| PUT | `/api/leads/:id` | Update lead | ✅ |
-| PATCH | `/api/leads/:id/status` | Update status only | ✅ |
-| DELETE | `/api/leads/:id` | Delete lead | ✅ |
-| POST | `/api/leads/:id/notes` | Add note | ✅ |
-| DELETE | `/api/leads/:id/notes/:noteId` | Delete note | ✅ |
-| GET | `/api/stats` | Dashboard analytics | ✅ |
-| POST | `/api/leads/public/submit` | Public contact form | ❌ |
-
----
-
 ## 🌐 Contact Form Integration
 
 To capture leads from your website, make a POST request to:
@@ -146,15 +127,6 @@ Content-Type: application/json
 
 ---
 
-## 📸 Screenshots
-
-- **Login Page** — Secure admin login with demo credentials shown
-- **Dashboard** — Stats cards + bar chart (7-day trend) + pie chart (status) + source breakdown
-- **Leads Table** — Filterable, searchable table with inline status updates
-- **Lead Detail** — Full profile with edit mode + timestamped notes panel
-
----
-
 ## 🚀 Deployment Notes
 
 1. Set `MONGODB_URI` to your Atlas connection string
@@ -167,4 +139,4 @@ Content-Type: application/json
 
 ## 📄 License
 
-MIT — free to use for learning and portfolio projects.
+Lahari Gadamsetty — free to use for learning and portfolio projects.
