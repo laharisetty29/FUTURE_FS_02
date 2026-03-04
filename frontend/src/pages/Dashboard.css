@@ -1,0 +1,73 @@
+.dashboard { padding: 28px; max-width: 1200px; }
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.page-title { font-family: var(--font-head); font-size: 26px; font-weight: 800; }
+.page-subtitle { color: var(--text2); font-size: 14px; margin-top: 3px; }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: border-color 0.2s;
+}
+.stat-card:hover { border-color: var(--accent-color); }
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--accent-color) 15%, transparent);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-value { font-family: var(--font-head); font-size: 22px; font-weight: 800; line-height: 1; }
+.stat-label { font-size: 12px; color: var(--text2); margin-top: 3px; }
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 900px) { .charts-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .charts-grid { grid-template-columns: 1fr; } }
+
+.chart-card { padding: 20px; }
+.chart-title { font-family: var(--font-head); font-size: 15px; font-weight: 700; margin-bottom: 16px; }
+.no-data { color: var(--text3); font-size: 13px; padding: 40px 0; text-align: center; }
+
+.source-list { display: flex; flex-direction: column; gap: 12px; }
+.source-row { display: flex; align-items: center; gap: 10px; }
+.source-name { font-size: 12px; color: var(--text2); width: 100px; flex-shrink: 0; }
+.source-bar-wrap { flex: 1; background: var(--bg3); border-radius: 4px; height: 6px; overflow: hidden; }
+.source-bar { height: 100%; border-radius: 4px; transition: width 0.5s; }
+.source-count { font-size: 13px; font-weight: 600; width: 24px; text-align: right; flex-shrink: 0; }
+
+.page-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text2);
+  font-size: 14px;
+}
